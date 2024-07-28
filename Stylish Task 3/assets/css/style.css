@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Roboto Slab", serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* part one  */
+
+
+nav{
+    height: 95px;
+    /* background-color: #212529; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 8px;
+    z-index: 1;
+    background: transparent;
+}
+
+.navBox{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navImage>img{
+    width: 65%;
+    padding-top: 32px;
+}
+
+.navBar{
+    width: 50%;
+    font-size: 15;
+    justify-content: right;
+    text-transform: uppercase;
+    padding-top: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+nav ul li{
+    font-size: 16px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navBar :hover{
+    color: #FFC800;
+}
+
+
+/* part two  */
+
+
+header{
+    height: 750px;
+    padding-top: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-image: url(../image/header-bg.jpg);
+
+}
+
+.headBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 200px;
+    
+}
+
+.headBox p{
+    font-size: 36px;
+    font-style: italic;
+    font-family: "Roboto Slab", serif;
+}
+.headBox h3{
+    font-size: 72px;
+    margin-bottom: 48px;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+.headBox a{
+    width: 225px;
+    height: 68px;
+    text-decoration: none;
+    color: white;
+    background-color: #FFC800;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 23px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.headBox:hover a{
+    background-color: #d9aa00;
+}
+
+
+/* part three  */
+
+
+.mainBoxOne{
+    height: 630px;
+    text-align: center;
+    color: #212529;
+}
+
+.textBoxOne{
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.textBoxOne h2{
+    font-size: 40px;
+    color: #212529;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    padding-top: 96px;
+    font-family: "Montserrat", sans-serif;    
+}
+
+.textBoxOne p{
+    font-size: 16px;
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 64px;
+    font-family: "Roboto Slab", serif;
+}
+
+.cardBoxOne{
+    display: flex;
+    gap: 31px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.iconBoxOne h4{
+    font-size: 24px;
+    color: #212529;
+    margin: 16px 0;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.iconBoxOne p{
+    font-size: 16px;
+    line-height: 1.75;
+    color: #6c757d;
+    margin-bottom: 16px;
+    font-family: "Roboto Slab", serif;
+}
+
+.iconBoxOne>span{
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    font-size: 70px;
+    border-radius: 50%;
+    background-color: #FFC800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+
+/* third part */
+
+.background{
+    background-color: #f8f9fa;
+}
+
+.mainBoxTwo{
+    height: 1200px;
+    padding-top: 96px;
+}
+
+.textBoxTwo{
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.textBoxTwo h2{
+    font-size: 40px;
+    color: #212529;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;     
+}
+
+.textBoxTwo p{
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 64px;
+    font-style: italic;
+    font-family: "Roboto Slab", serif;
+}
+
+.cardBoxTwo{
+    height: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contentBox{
+    width: calc(33.33% - 15px);
+    height: 420px;
+    background-color: white;
+}
+
+.imageBox{
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+
+.imageBox>img{
+    width: 100%;
+    height: 100%;
+}
+
+.imageBox::before{
+    content: "\2b";
+    /* content: url(../image/plus-svgrepo-com.svg); */
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    background-color: #FFC800E6;
+    opacity: 0;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    transition: 0.8s;
+    line-height: 320px;
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+}
+
+.imageBox:hover::before{
+    opacity: 1;
+    text-align: center;
+}
+
+.textBoxThree h4{
+    font-size: 24px;
+    padding-top: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.textBoxThree p{
+    font-size: 16px;
+    color: #6c757d;
+    padding-top: 5px;
+    font-family: "Roboto Slab", serif;
+}
+
+
+/* part four */
+
+.mainBoxThree{
+    height: 1850px;
+    box-sizing: border-box;
+    padding-top: 96px;
+}   
+
+.textBoxFour{
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.textBoxFour h2{
+   font-size: 40px;
+   color: #212529;
+   margin-bottom: 16px;
+   font-family: "Montserrat", sans-serif;
+   
+}
+.textBoxFour p{
+font-size: 16px;
+color: #6c757d;
+margin-bottom: 64px;
+font-family: "Roboto Slab", serif;
+}
+
+.timeLineBox{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+}
+
+.timeLineBox::after{
+    content: "";
+    width: 3px;
+    height: 94%;
+    position: absolute;
+    background-color: #e9ecef;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.circleCardBox{
+    width: 56%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.circleCardBox:nth-child(odd){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.circleCardBox:nth-child(odd) .circle{
+    margin-right: -80px;
+}
+
+.circleCardBox:nth-child(even){
+    margin-left: auto;
+}
+
+.circleCardBox:nth-child(even) .circle{
+    margin-left: -80px;
+}
+
+.circleImageBox{
+    width: 22%;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #FFC800;
+    border: 7px solid #e9ecef;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 85px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.circleImageBox>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.textBoxFive{
+    width: 60%;
+    padding-bottom: 59px;
+}
+
+.textBoxFive>h4{
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #212529;
+    font-family: "Montserrat", sans-serif;
+}
+
+.textBoxFive>p{
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.75;
+    font-family: "Roboto Slab", serif;
+}
+
+
+/* part five */
+
+
+.mainBoxFour{
+    height: 850px;
+    background-color: #f8f9fa;
+}
+
+.textBoxSix{
+    height: 170px;
+    text-align: center;
+    padding-top: 96px;
+}
+
+.textBoxSix h2{
+   color: #212529;
+   font-size: 40px;
+   margin-bottom: 16px;
+   font-family: "Montserrat", sans-serif;
+   
+}
+.textBoxSix p{
+font-size: 16px;
+color: #6c757d;
+margin-bottom: 64px;
+font-style: italic;
+font-family: "Roboto Slab", serif;
+}
+
+.cardBoxThree{
+    height: 360px;
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 48px;
+    justify-content: space-between;
+}
+
+.contentBoxTwo{
+    width: 30%;
+}
+
+.imageBoxTwo{
+    width: 60%;
+    height: 240PX;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.imageBoxTwo>img{
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.imageBoxTwo h4{
+    color: #212529;
+    font-size: 24px;
+    margin-top: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.imageBoxTwo p{
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 16px;
+    line-height: 1.75;
+    font-family: "Roboto Slab", serif;
+}
+
+
+.iconBoxTwo{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.iconIBox{
+    width: 25%;
+    height: 40px;
+    background-color: #212529;
+    border-radius: 50%;
+    padding-top: 11px;
+    text-align: center;
+}
+
+.iconIBox a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.iconIBox:hover{
+    background-color: #424649;
+}
+
+.textBoxSeven{
+    width: 60%;
+    margin: auto;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #6c757d;
+    line-height: 1.75;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+
+/* part six */
+
+.mainBoxFive{
+    height: 175px;
+    padding: 48px 0;
+    font-family: "Roboto Slab", serif;
+}
+
+.contentBoxThree{
+    padding: 0px 12px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos a img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+
+/* part seven */
+
+.backgroundTwo{
+    background-color: #212529;
+    background-image: url(../image/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mainBoxSix{
+    height: 720px;
+    padding: 96px 0px;
+    text-align: center;
+}
+
+.textBoxEight h2{
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.textBoxEight p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #6c757d;
+    font-family: "Roboto Slab", serif;
+}
+
+.mainFormBox{
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+}
+
+.formBox{
+    width: 48%;
+    position: relative;
+    background-color: white;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+}
+
+.formBox label{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    top: 20px;
+    text-align: center;
+}
+
+.formBox input{
+    width: 100%;
+    padding: 20px 0;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    opacity: 0.5;
+    padding-left: 15px;
+    font-family: "Roboto Slab", serif;
+}
+
+.formBox>textarea{
+    width: 100%;
+    height: 245px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 15px 15px;
+    font-size: 15px;
+    color: #212529;
+    font-family: "Roboto Slab", serif;
+}
+
+.btnBox{
+    width: 235px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #FFC800;
+    color: white;
+    font-size: 18px;
+    opacity: 0.65;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* part eight */
+
+.mainBoxSeven{
+    height: 90px;
+    padding: 24px 0px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footBox p{
+    font-size: 15px;
+    padding: 0px 12px;
+    color: #212529;
+}
+
+.iconBoxThree{
+    width: 12%;
+    display: flex;
+    text-align: center;
+    margin-right: 21px;
+    justify-content: space-between;
+}
+
+.iconIBoxTwo{
+    width: 25%;
+    height: 40px;
+    background-color: #212529;
+    border-radius: 50%;
+    padding-top: 11px;
+    text-align: center;
+
+}
+
+.iconIBoxTwo>a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.iconIBoxTwo:hover{
+    background-color: #424649;
+}
+
+.textBoxNine a{
+    font-size: 15px;
+    color: #212529;
+    text-decoration: none;
+    padding-left: 12px;
+    margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
